@@ -10,7 +10,38 @@ body{
     background-position: center;
     background-color: black;
     color: white;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-family: 'Bellefair', serif;
+    font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
+}
+
+header{
+    padding: 1rem;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.nav-links{
+        background: linear-gradient(to right, rgba(42, 42, 55, 0.8), rgba(42, 42, 49, 0.6));
+        padding: 20px;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+    
+
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-right: 16rem;
+}
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Barlow Condensed', serif;
+    font-weight: normal;
+    font-size: 16px;
 }
