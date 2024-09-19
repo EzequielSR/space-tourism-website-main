@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-image: url(../assets/home/background-home-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,34 +15,42 @@ body{
     height: 100vh;
 }
 
-header{
+header {
     padding: 1rem;
 }
 
-.container-nav{
+.container-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
 }
-.nav-links{
-        background: linear-gradient(to right, rgba(42, 42, 55, 0.8), rgba(42, 42, 49, 0.6));
-        padding: 20px;
-        border-radius: 10px;
-        backdrop-filter: blur(5px);
-    
 
+.nav-links {
+    background: linear-gradient(to right, rgba(42, 42, 55, 0.8), rgba(42, 42, 49, 0.6));
+    padding: 20px;
+    border-radius: 5px 0px 0px 5px;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 1.7rem;
+    right: 0;
+    width: 50rem;
 }
-.nav-links ul{
+
+.nav-items {
     display: flex;
     list-style: none;
     gap: 2rem;
-    margin-right: 16rem;
+    /* margin-right: rem; */
+    /* margin-left: rem; */
+    margin: 10px;
 }
-.nav-links li a{
+
+.nav-items li a {
     color: white;
     text-decoration: none;
     font-family: 'Barlow Condensed', serif;
     font-weight: normal;
     font-size: 16px;
+    margin-left: 4rem;
 }
