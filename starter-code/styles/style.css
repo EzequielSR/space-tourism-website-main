@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body {
@@ -34,7 +35,9 @@ header {
     z-index: 1000;
 }
 .nav-links {
-    background: linear-gradient(to right, rgba(42, 42, 55, 0.8), rgba(42, 42, 49, 0.6));
+    background: rgba(255, 255, 255, 0.3); /* Cor de fundo com transparência */
+    backdrop-filter: blur(10px); /* Aplica o efeito de desfoque */
+    -webkit-backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 5px 0px 0px 5px;
     backdrop-filter: blur(5px);
@@ -62,5 +65,50 @@ header {
     font-family: 'Barlow Condensed', serif;
     font-weight: normal;
     font-size: 16px;
-    margin-left: 4rem;
+    margin-left: 2rem;
+}
+.hero{
+    width: 540px;
+    height: 343px;
+}
+.hero h3{
+    font-family: 'Barlow Condensed', serif;
+    font-weight: normal;
+    font-size: 28px;
+}
+.hero h1{
+    font-family: 'Bellefair', serif;
+    font-size: 144px;
+    font-weight: normal;
+}
+
+.hero p{
+    font-family: 'Barlow', serif;
+    font-size: 18px;
+    line-height: 180%;
+    font-weight: normal;
+    width: 540px;
+}
+
+.explore {
+    width: 540px;
+    height: 272px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.explorer-bg{
+    background-color: white;
+    width: 272px;
+    height: 272px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.explore-text p{
+    color: black;
+    font-size: 32px;
+    font-family: 'Bellefair', serif;
+    font-weight: normal;
 }
