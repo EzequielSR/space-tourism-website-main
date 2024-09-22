@@ -38,7 +38,7 @@ header {
     background: rgba(255, 255, 255, 0.3); /* Cor de fundo com transparência */
     backdrop-filter: blur(10px); /* Aplica o efeito de desfoque */
     -webkit-backdrop-filter: blur(10px);
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     border-radius: 5px 0px 0px 5px;
     backdrop-filter: blur(5px);
     position: absolute;
@@ -52,7 +52,7 @@ header {
     display: flex;
     list-style: none;
     gap: 2rem;
-    margin: 8px;
+    margin: 8px 8px 0 8px;
     letter-spacing: 3px;
 }
 .nav-items strong{
@@ -60,12 +60,38 @@ header {
 }
 
 .nav-items li a {
+    position: relative;
+}
+a.nav-link{
     color: white;
     text-decoration: none;
     font-family: 'Barlow Condensed', serif;
     font-weight: normal;
     font-size: 16px;
     margin-left: 2rem;
+    position: relative;
+    padding-bottom: 19px;
+}
+
+a.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+a.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+a.nav-link:hover {
+    color: white;
 }
 .hero{
     width: 540px;
