@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(../assets/home/background-home-desktop.jpg);
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -94,48 +94,33 @@ a.nav-link{
 a.nav-link:hover {
     color: white;
 }
-.hero{
-    width: 540px;
-    height: 343px;
-}
-.hero h3{
-    font-family: 'Barlow Condensed', serif;
-    font-weight: normal;
-    font-size: 28px;
-}
-.hero h1{
-    font-family: 'Bellefair', serif;
-    font-size: 144px;
-    font-weight: normal;
-}
-
-.hero p{
-    font-family: 'Barlow', serif;
-    font-size: 18px;
-    line-height: 180%;
-    font-weight: normal;
-    width: 540px;
-}
-
-.explore {
-    width: 540px;
-    height: 272px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-.explorer-bg{
-    background-color: white;
-    width: 272px;
-    height: 272px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.explore-text p{
-    color: black;
-    font-size: 32px;
-    font-family: 'Bellefair', serif;
-    font-weight: normal;
-}
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .nav-link.active {
+    border-bottom: 2px solid #fff;
+  }
+  
+  .nav-link {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-link:hover {
+    color: #d0d6f9;
+  }
+  
+  .moon-img img {
+    max-width: 100%;
+    height: auto;
+  }
